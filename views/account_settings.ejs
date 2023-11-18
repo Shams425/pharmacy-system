@@ -1,0 +1,97 @@
+<% include inc/view_header %>
+
+<body>
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <% include inc/view_sidebar %>
+      <div class="layout-page">
+        <!-- Top Navbar -->
+        <% include inc/view_top_menu %>
+        <div class="content-wrapper"><div id="history">
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <section class="card bigCard">
+              <div class="card-content">
+                <div class="card-body">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-md-10 col-12 order-md-2">
+                        <div class="row">
+                            <div class="col-12 col-md-4 mb-3">
+                              <h4 class="text-bold-700 text-uppercase mb-0">John Doe</h4>
+                              <p class="mb-0">Employee</p>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                              <h4 class="text-bold-700 text-uppercase mb-0">Employer Since</h4>
+                              <p class="mb-0">12/11/2020</p>
+                            </div>
+                            <div class="col-12 col-md-4 mb-3">
+                              <h4 class="text-bold-700 text-uppercase mb-0">Employer ID</h4>
+                              <p class="mb-0">43.228.229.172</p>
+                            </div>
+                            <hr/>
+                        </div>
+                        <div class="editData mb-4 d-flex align-items-center">
+                          <h3>Edit Data</h3>
+                          <i class="m-3 fas fa-edit"></i>
+                        </div>
+                          <form class="form-horizontal form-user-profile row mt-2" action="index.html">
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                              <fieldset class="form-label-group">
+                                <label for="first-name">First name</label>
+                                  <input type="text" class="form-control" id="first-name" value="John" required="" autofocus="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                              <fieldset class="form-label-group">
+                                <label for="last-name">Lats name</label>
+                                <input type="text" class="form-control" id="last-name" value="Doe" required="" autofocus="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                              <fieldset class="form-label-group">
+                                <label for="user-name">User name</label>
+                                <input type="text" class="form-control" id="user-name" value="johndoe9016" required="" autofocus="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                              <fieldset class="form-label-group">
+                                <label for="email-address">Email</label>
+                                <input type="text" class="form-control" id="email-address" value="johndoe9016@gmail.com" required="" autofocus="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                              <fieldset class="form-label-group">
+                                <label for="old-password">Old password</label>
+                                <input type="password" class="form-control" id="old-password" placeholder="Enter Password" required="" autofocus="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+                              <fieldset class="form-label-group">
+                                <label for="new-password">New password</label>
+                                <input type="password" class="form-control" id="new-password" placeholder="Enter Password" required="" autofocus="">
+                              </fieldset>
+                            </div>
+                          </form>
+                      </div>
+                      <div class="col-md-2 col-12 order-md-1">
+                        <img class="card-img" src="/assets/images/avatars/1.png" class="rounded-circle height-100" alt="Card image" />
+                        <div class="uploadImg mt-3 d-flex ali justify-content-between">
+                          <p>Change Img</p>
+                          <div role="button">
+                            <i class="fas fa-upload"></i>
+                          </div>
+                        </div>
+                      </div> 
+                    </div>
+                    <div class="col-12 text-right d-flex justify-content-end">
+                      <button type="submit" class="btn btn-outline-success">Save</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <% include inc/view_footer %>

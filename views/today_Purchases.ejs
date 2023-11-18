@@ -1,0 +1,114 @@
+<% include inc/view_header %>
+
+<body>
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <% include inc/view_sidebar %>
+      <div class="layout-page">
+        <!-- Top Navbar -->
+        <% include inc/view_top_menu %>
+        <div class="content-wrapper"><div id="history">
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="title mb-3">
+              <h3>Sales for</h3>
+              <script>
+                document.write(`<p class="mt-2 fw-bold">${new Date().getDay()}/${new Date().getMonth()}/${new Date().getFullYear()}</p>`)
+              </script>
+            </div>
+
+            <div class="overView mb-3">
+                <h3>Over View</h3>
+                <div class="details d-flex align-items-center flex-wrap my-3">
+                    <div class="cardContainer col-lg-4 col-md-6 col-sm-12 p-2">
+                        <div class="card bigCard ">
+                            <div class="card-header">
+                                <h4>Total Purchases</h4>
+                            </div>
+                            <div class="card-body d-flex align-items-center justify-content-between">
+                                <div class="amount">
+                                    <h1>35</h1>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-handshake fs-30"></i>
+                                </div>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardContainer col-lg-4 col-md-6 col-sm-12 p-2">
+                        <div class="card bigCard ">
+                            <div class="card-header">
+                                <h4>Total Medicines</h4>
+                            </div>
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="amount">
+                                    <h1>1200</h1>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-circle"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardContainer col-lg-4 col-md-6 col-sm-12 p-2">
+                        <div class="card bigCard ">
+                            <div class="card-header">
+                                <h4>Total Profit</h4>
+                            </div>
+                            <div class="card-body d-flex justify-content-between">
+                                <div class="amount">
+                                    <h1>32000</h1>
+                                </div>
+                                <div class="icon">
+                                    <i class="fas fa-dollar"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Medicine Name</th>
+                    <th>Medicine Type</th>
+                    <th>Company Region</th>
+                    <th>Quantity</th>
+                    <th>Total Payable</th>
+                    <th>Total Profit</th>
+                    <th>Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- <%# billInfo.forEach(function(item){ %>
+                  <tr>
+                    <td><%#= item.Invoice_No %></td>
+                    <td><%#= item.Date %></td>
+                    <td><%#= item.Total_Amount %></td>
+                    <td><%#= item.Discount %></td>
+                    <td><%#= item.Discount_Amount %></td>
+                    <td><%#= item.Total_Payable %></td>
+                    <td><%#= item.Paid %></td>
+                    <td><%#= item.Returned %></td>
+                  </tr>
+                  <%# }) %> -->
+                  <tr>
+                    <td>1</td>
+                    <td>Bandol</td>
+                    <td>Tables</td>
+                    <td>Sudan</td>
+                    <td>1 course</td>
+                    <td>25000</td>
+                    <td>20000</td>
+                    <td>8:30 AM</td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        </div>
+
+         <!-- Footer -->
+         <% include inc/view_footer %>
